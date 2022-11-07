@@ -16,6 +16,22 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    //签名文件配置
+    signingConfigs {
+        debug {
+            storeFile file('../GameleyYouZi_PublishKey.jks')
+            storePassword 'eqEG2KmWyypPLhmMCBL5WhKd5'
+            keyPassword 'eqEG2KmWyypPLhmMCBL5WhKd5'
+            keyAlias 'key0'
+        }
+        release {
+            storeFile file('../GameleyYouZi_PublishKey.jks')
+            storePassword 'eqEG2KmWyypPLhmMCBL5WhKd5'
+            keyPassword 'eqEG2KmWyypPLhmMCBL5WhKd5'
+            keyAlias 'key0'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
